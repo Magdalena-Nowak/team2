@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RWD - schemat strony</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -44,7 +66,7 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">KONTAKT</a>
             </li>
-          </ul>
+          </ul class="list-group">
         </div>
       </nav>
     </div>
@@ -65,25 +87,171 @@
 
     <!-- End DOMOWA -->
 
-    <!-- Start COURSE -->
-    <div id="course">
-      <div class="text-center col-12 py-4">
-        <p><b>Zobacz więcej na temat studiów</b></p>
-        <a class="btn btn-outline-secondary" href="">Poznaj kierunki</a>
+    <!-- Start SERVICES -->
+    <section id="services d-flex justify-content-center align-items-center">
+      <div class="services__wrapper py-4 container">
+        <article>
+          <header class="services__header text-center">
+            <h2 class="services__header-title">Nasze usługi</h2>
+          </header>
+          <div class="services__text row d-flex align-items-center align-items-md-start justify-content-center">
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              ><i class="fa-solid fa-scissors"></i></div>
+              <h3 class="col-12 col-lg-10 text-center services__text-title">
+                Hotel i pielęgnacja zwierząt
+              </h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+              <ul class="list-group">
+              <li class="list-group-item">
+                Prowadzimy hotel dla psów i kotów oraz wykonujemy zabiegi
+                pielęgnacyjne takie jak: kąpiele, strzyżenie psów i kotów.
+              </li>
+              </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Lecznictwo</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">diagnostyka i leczenie zwierząt</li>
+                  <li class="list-group-item">intensywna terapia</li>
+                  <li class="list-group-item">transfuzja krwi</li>
+                  <li class="list-group-item">leczenie szpitalne</li>
+                  <li class="list-group-item">badania przed zabiegami chirurgicznymi</li>
+                  <li class="list-group-item">prowadzenie pacjentów przewlekle chorych</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-apple-whole"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Profilaktyka</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">badanie przed wyjazdem za granicę;</li>
+                  <li class="list-group-item">czipowanie zwierzat</li>
+                  <li class="list-group-item">wystawianie paszportów</li>
+                  <li class="list-group-item">profilaktyka przeciwpasożytnicza</li>
+                  <li class="list-group-item">szczepienia ochronne przeciw chorobami zakaźnymi</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-syringe"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Badania laboratoryjne</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">morfologia krwi, analiza rozmazu krwi</li>
+                  <li class="list-group-item">biochemia krwi, jonogram, gazometria</li>
+                  <li class="list-group-item">badanie moczu (pełne badanie: paskowe i osad moczu)</li>
+                  <li class="list-group-item">zeskrobiny skóry, odcisk skóry</li>
+                  <li class="list-group-item">posiewy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Badania dodatkowe</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">RTG</li>
+                  <li class="list-group-item">USG</li>
+                  <li class="list-group-item">EKG</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-bone"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Chrurgia Twarda</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    ortopedia-stabilizacja złamań (osteosynteza kości po
+                    złamaniu)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Chirurgia Miękka</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">sterylizacja, kastracja, szycie ran</li>
+                  <li class="list-group-item">usuwanie guzów nowotworowych</li>
+                  <li class="list-group-item">repozycja gałki ocznej</li>
+                  <li class="list-group-item">
+                    operacje ratujące życie: cesarskie cięcie, skręt żołądka,
+                    laparotomia diagnostyczna, usuwanie ciał obcych z układu
+                    pokarmowego;
+                  </li>
+                  <li class="list-group-item">
+                    usuwanie kamieni z pęcherza moczowego i udraznianie zatkanej
+                    cewki moczowej
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row col-12 col-sm-10 col-md-6 my-4">
+              <div
+                class="col-12 col-lg-1 services__icon-wrapper d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <h3 class="col-12 col-lg-10 services__text-title">Anastezjologia</h3>
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    bezpieczeństwo znieczul class="list-group"enia ogólnego (narkoza wziewna)
+                  </li>
+                  <li class="list-group-item">stały monitoring funkcji życiowych</li>
+                  <li class="list-group-item">suplementacja tlenem znieczul class="list-group"anych pacjentów</li>
+                  <li class="list-group-item">terapia przeciwbólowa w okresie pooperacyjnym</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-    <!-- End COURSE -->
+    </section>
+    <!-- End SERVICES -->
 
     <!-- Start FEATURES -->
     <div id="features">
       <div class="jumbotron text-center m-0">
         <h2>Poznaj zagadnienienia:</h2>
-        <ul class="features-list">
-          <li>Tworzenie layoutów HTML/CSS/RWD</li>
-          <li>Programowanie w JS z ES6+</li>
-          <li>React w najnowszej wersji</li>
-          <li>Pracy w zespołach projektowych z GIT-em</li>
-        </ul>
+        <ul class="list-group" class="features-list">
+          <li class="list-group-item">Tworzenie layoutów HTML/CSS/RWD</li>
+          <li class="list-group-item">Programowanie w JS z ES6+</li>
+          <li class="list-group-item">React w najnowszej wersji</li>
+          <li class="list-group-item">Pracy w zespołach projektowych z GIT-em</li>
+        </ul class="list-group">
         <hr class="line" />
       </div>
     </div>
@@ -143,53 +311,55 @@
     <!-- Start CLIENTS -->
 
     <div id="clients">
-		<div class="jumbotron">
-			<div class="heading text-center col-12">
-				<h3>Co mówią o nas klienci:</h3>
-			</div>
-			<div class="row text-center">
-				<div class="client-wrapper col-lg-6 col-md-12 px-lg-2">
-					<div class="row">
-						<div class="col-xl-4 col-lg-12 my-2">
-							<img class="client" src="img/client2.png" alt="Pani" />
-						</div>
-						<div class="col-xl-8 col-lg-12 my-2 px-4">
-							<blockquote class="blockquote text-center">
-								<p class="px-4">
-									Lorem ipsum dolor sit, amet consectetur adipisicing elit.Facilis animi ea totam quam, itaque, consequuntur laboriosam laborum consectetur na aliquid quisquam! Libero sint fugit sapiente animi asperiores assumenda nulla rem!
-								</p>
-							</blockquote>
-							<hr class="jumbo-line" />
-							<footer class="blockquote-footer">
-								<cite>
-									Joasia z Warszawy
-								</cite>
-							</footer>
-						</div>
-					</div>
-				</div>
-				<div class="client-wrapper col-lg-6 col-md-12 px-lg-2">
-					<div class="row">
-						<div class="col-xl-4 col-lg-12 my-2">
-							<img class="client" src="img/client1.png" alt="Pan" />
-						</div>
-						<div class="col-xl-8 col-lg-12 my-2 px-4">
-							<blockquote class="blockquote text-center">
-								<p class="px-4">
-									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis anim ea totam quam, itaque, consequuntur laboriosam laborum consectetur nam aliquid quisquam! Libero sint fugit sapiente animi asperiores assumenda nulla rem!
-								</p>
-							</blockquote>
-							<hr class="jumbo-line" />
-							<footer class="blockquote-footer">
-								<cite>
-									Marek z Warszawy
-								</cite>
-							</footer>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="jumbotron">
+        <div class="heading text-center col-12">
+          <h3>Co mówią o nas klienci:</h3>
+        </div>
+        <div class="row text-center">
+          <div class="client-wrapper col-lg-6 col-md-12 px-lg-2">
+            <div class="row">
+              <div class="col-xl-4 col-lg-12 my-2">
+                <img class="client" src="img/client2.png" alt="Pani" />
+              </div>
+              <div class="col-xl-8 col-lg-12 my-2 px-4">
+                <blockquote class="blockquote text-center">
+                  <p class="px-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.Facilis animi ea totam quam, itaque, consequuntur
+                    laboriosam laborum consectetur na aliquid quisquam! Libero
+                    sint fugit sapiente animi asperiores assumenda nul class="list-group"la rem!
+                  </p>
+                </blockquote>
+                <hr class="jumbo-line" />
+                <footer class="blockquote-footer">
+                  <cite> Joasia z Warszawy </cite>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="client-wrapper col-lg-6 col-md-12 px-lg-2">
+            <div class="row">
+              <div class="col-xl-4 col-lg-12 my-2">
+                <img class="client" src="img/client1.png" alt="Pan" />
+              </div>
+              <div class="col-xl-8 col-lg-12 my-2 px-4">
+                <blockquote class="blockquote text-center">
+                  <p class="px-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis anim ea totam quam, itaque, consequuntur laboriosam
+                    laborum consectetur nam aliquid quisquam! Libero sint fugit
+                    sapiente animi asperiores assumenda nul class="list-group"la rem!
+                  </p>
+                </blockquote>
+                <hr class="jumbo-line" />
+                <footer class="blockquote-footer">
+                  <cite> Marek z Warszawy </cite>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- End CLIENTS -->
