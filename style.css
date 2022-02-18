@@ -167,3 +167,30 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
+#kontakt {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.kontakt_title {
+  font-weight: bold;
+  color: #015249;
+}
+
+.kontakt_adress {
+  color: #77c9d4;
+}
+
+.kontakt_adress a {
+  color:  #015249;
+}
+
+.kontakt_adress a:hover {
+  color: #77c9d4;
+}
+
+.kontakt_map{
+  width: 100%;
+}
