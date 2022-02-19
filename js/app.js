@@ -12,7 +12,6 @@ function gsapAnimation(elements, duration ) {
             scrollTrigger: {
                 trigger: parentElement,
                 start: "50vh center",
-                markers: true,
             },
             x: "0%",
             y: "0%",
