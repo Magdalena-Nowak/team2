@@ -1,4 +1,6 @@
+import style from "./css/index.css"
 gsap.registerPlugin(ScrollTrigger);
+
 
 const servicesTitles = document.querySelectorAll('.services__text-title');
 const servicesIcons = document.querySelectorAll('.services__icon-wrapper');
