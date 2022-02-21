@@ -191,6 +191,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
   color: #77c9d4;
 }
 
-.kontakt_map{
-  width: 100%;
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:auto;
+  width:auto;
+  position:absolute;
 }
