@@ -347,7 +347,7 @@ transition: opacity .5;
   color: white;
 } */
 
-/*============ BOOTSTRAP BREAK POINTS:
+/* BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -363,5 +363,43 @@ Large (lg) devices (desktops, 992px and up)
 
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+*/
 
-=============*/
+// kontakt/jp
+
+#kontakt {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.kontakt_title {
+  font-weight: bold;
+  color: #015249;
+}
+
+.kontakt_adress {
+  color: #77c9d4;
+}
+
+.kontakt_adress a {
+  color:  #015249;
+}
+
+.kontakt_adress a:hover {
+  color: #77c9d4;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:auto;
+  width:auto;
+  position:absolute;
+}
