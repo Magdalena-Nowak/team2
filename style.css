@@ -94,20 +94,19 @@ html {
 .aboutas-divider {
   margin: 5rem 0; 
 }
-
-.aboutas-heading {
+.aboutas{
   font-family: var(--header-font-family);
+}
+.aboutas-heading {
   font-size: var(--title-font-size);
  }
 
 .aboutas-coloredtext{
   color: var(--main-color-blue);
-  font-family: var(--header-font-family);
   font-size: var(--title-font-size);
 }
 
 .aboutas-maintext{
-  font-family: var(--header-font-family);
   font-size: var(--main-font-size);
 }
 
