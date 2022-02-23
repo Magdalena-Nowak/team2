@@ -91,23 +91,26 @@ html {
 /* End SERVICES */
 
 /* Aboutas css -start */
-.aboutas {
-  font-weight: 400;
-}
-
 .aboutas-divider {
   margin: 5rem 0; 
 }
 
 .aboutas-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
+  font-family: var(--header-font-family);
+  font-size: var(--title-font-size);
+ }
 
 .aboutas-coloredtext{
   color: var(--main-color-blue);
+  font-family: var(--header-font-family);
+  font-size: var(--title-font-size);
 }
+
+.aboutas-maintext{
+  font-family: var(--header-font-family);
+  font-size: var(--main-font-size);
+}
+
 /* Aboutas css - end */
 
 /* gallery Start */
