@@ -367,7 +367,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
-// kontakt/jp
 
 #kontakt {
   text-align: center;
@@ -401,7 +400,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .map-responsive iframe{
   left:0;
   top:0;
-  height:auto;
-  width:auto;
+  height: 100%;
+  width:100%;
   position:absolute;
 }
