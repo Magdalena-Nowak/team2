@@ -203,22 +203,47 @@ html {
 
 /* Aboutas css -start */
 .aboutas-divider {
-  margin: 5rem 0; 
+  margin: 5rem 0;
 }
-.aboutas{
+.aboutas {
   font-family: var(--header-font-family);
 }
 .aboutas-heading {
-  font-size: var(--title-font-size);
- }
-
-.aboutas-coloredtext{
-  color: var(--main-color-blue);
-  font-size: var(--title-font-size);
+  font-size: var(--header-font-size);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.aboutas-maintext{
+.aboutas-coloredtext {
+  color: var(--main-color-blue);
+  font-size: var(--header-font-size);
+}
+
+.aboutas-maintext {
   font-size: var(--main-font-size);
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .aboutas-img{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .aboutas-img{
+    width: 250px;
+  }
+  .aboutas-heading {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .aboutas-maintext {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 /* Aboutas css - end */
