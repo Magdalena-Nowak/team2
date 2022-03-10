@@ -6,29 +6,62 @@
   --main-color-green: #57bc90;
   --light-color: #a5a5af;
   --header-font-size: 2.2rem;
-  --title-font-size: 1.6rem;
-  --main-font-size: 1rem;
+  --title-font-size: 1.4rem;
+  --main-font-size: 1.2rem;
   --subtitle-font-size: 0.8rem;
   --icon-size: 1.4rem;
   --main-font-family: "Poppins", cursive;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 html {
   font-family: var(--main-font-family);
 }
 
-/* Start Navbar */
+img {
+  object-fit: cover;
+}
 
-/* End Navbar */
+/* Start NAVBAR */
+.carousel-item {
+  max-height: 70vh;
+}
 
-/* Start Landing */
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-/* End Landing */
+.dog-img {
+  object-position: 0;
+}
+
+.navbar {
+  background-color: black;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+
+.nav-item {
+  padding-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color-blue);
+  border-bottom: 1px solid var(--main-color-blue);
+}
+
+/* End NAVBAR */
 
 /* Start SERVICES */
-/* article {
-  margin-left: 2rem;
-} */
 .services {
   font-size: var(--main-font-size);
 }
@@ -92,10 +125,12 @@ html {
 
 /* Strat TEAM */
 
+
+
 #team .section-title {
     text-align: center;
-    font-size: 28px;
-    margin-bottom:40px;
+    /* font-size: 28px; */
+    /* margin-bottom:40px; */
 }
 
 #team .card {
@@ -172,81 +207,86 @@ html {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    height: 420px;
 }
 
 .backside .card a {
     font-size: 28px;
-    color: #015249;
+    color: black;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #015249;
+    color: black;
 }
 
 .frontside .card .card-text,
 .backside .card .card-text {
     color: rgb(0, 0, 0);
-    font-size: 14px;;
+    font-size: var(--main-font-size);
 }
 .frontside .card .card-body img {
     background: #eee;
     padding: 5px;
     cursor: pointer;
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
+
+
+@media (min-width: 1600px) {
+  #team {
+    width: 1300px;
+    margin: auto;
+  }
+}
+
 /* End TEAM */
 
-/* Aboutas css -start */
-.aboutas-divider {
+/* aboutus css -start */
+.aboutus-divider {
   margin: 5rem 0;
 }
-.aboutas {
+.aboutus {
   font-family: var(--header-font-family);
 }
-.aboutas-heading {
+.aboutus-heading {
   font-size: var(--header-font-size);
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
-.aboutas-coloredtext {
+.aboutus-coloredtext {
   color: var(--main-color-blue);
   font-size: var(--header-font-size);
 }
 
-.aboutas-maintext {
-  font-size: var(--main-font-size);
+.aboutus-maintext {
   text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  font-size: var(--main-font-size);
 }
 
 
-@media screen and (max-width: 767px) {
-  .aboutas-img{
+/* @media screen and (max-width: 767px) {
+  .aboutus-img{
     width: 350px;
   }
 }
 @media screen and (max-width: 450px) {
-  .aboutas-img{
+  .aboutus-img{
     width: 250px;
   }
-  .aboutas-heading {
+  .aboutus-heading {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .aboutas-maintext {
+  .aboutus-maintext {
     margin-left: 25px;
     margin-right: 25px;
   }
-}
+} */
 
-/* Aboutas css - end */
+/* aboutus css - end */
 
 /* gallery Start */
 
@@ -393,14 +433,17 @@ transition: opacity .5;
 }
 /* gallery End */
 
-.navbar {
+/* .navbar {
+  height: 10vh;
   background-color: black;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
+  z-index: 20;
 }
 
 .navbar-brand img {
-  height: 1.8rem;
+  height: 10vh;
+  object-fit: cover;
 }
 
 .nav-item {
@@ -410,54 +453,8 @@ transition: opacity .5;
 .navbar .navbar-nav .nav-link:hover {
   color: var(--main-color-blue);
   border-bottom: 1px solid var(--main-color-blue);
-}
+} */
 
-.home-inner {
-  background-image: url(img/computers.png);
-  background-size: cover;
-  height: 90vh;
-}
-
-.caption h1 {
-  font-size: 2rem;
-  padding-bottom: 0.6rem;
-  color: aliceblue;
-}
-
-.caption {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.features-list {
-  list-style-type: none;
-}
-
-#course {
-  background-color: lightgray;
-}
-
-.jumbotron {
-  color: black;
-  margin: 0;
-  padding: 2rem;
-}
-
-.client {
-  border-radius: 50%;
-  height: 30vh;
-}
-
-.client-wrapper {
-  padding: 2rem 0;
-}
-
-#clients h3 {
-  padding: 1.5rem 0;
-}
 
 /* .narrow {
   width: 75%;
@@ -503,11 +500,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
-
 #kontakt {
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .kontakt_title {
